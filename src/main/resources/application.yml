@@ -1,0 +1,22 @@
+spring:
+  mvc:
+    pathmatch:
+      matching-strategy: ANT_PATH_MATCHER
+  datasource:
+    url: jdbc:postgresql://localhost:5432/base
+    username: postgres
+    password: 4478944
+    driver-class-name: org.postgresql.Driver
+  jpa:
+    properties:
+      hibernate:
+        jdbc:
+          time_zone: UTC
+        temp:
+          use_jdbc_metadata_defaults: false
+        format_sql: true
+    generate-ddl: false
+    hibernate:
+      ddl-auto: update
+    database: postgresql
+    show-sql: true
