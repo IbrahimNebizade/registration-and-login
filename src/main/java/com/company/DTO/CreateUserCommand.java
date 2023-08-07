@@ -14,6 +14,7 @@ import java.util.Date;
 public class CreateUserCommand {
     private String name;
     private String surname;
+    private String email;
     private String nickName;
     private int age;
     private String phoneNumber;

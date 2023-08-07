@@ -22,6 +22,8 @@ public class User implements Serializable {
         private String surname;
         private Date birthdate;
         private Date createTime;
+        @Column(unique = true)
+        private String email;
 
         @Column(unique = true)
         private String nickName;

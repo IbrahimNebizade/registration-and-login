@@ -1,19 +1,17 @@
 package com.company.service.impl;
 
 import com.company.DTO.*;
-import com.company.DTO.Page;
 import com.company.mapper.UserMapper;
 import com.company.model.User;
 import com.company.repository.UserRepository;
 import com.company.service.UserService;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
+import org.springframework.context.ApplicationEventPublisher;
 import org.springframework.data.domain.Pageable;
-import org.springframework.stereotype.Repository;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
-import java.util.Optional;
 
 @Service
 @Slf4j
@@ -21,6 +19,7 @@ import java.util.Optional;
 public class UserServiceImpl implements UserService {
     private final UserRepository userRepo;
     private final UserMapper userMapper;
+    private final ApplicationEventPublisher eventPublisher;
 
 
 

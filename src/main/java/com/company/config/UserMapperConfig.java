@@ -1,4 +1,4 @@
-package com.company.config.DTOConfig;
+package com.company.config;
 
 import com.company.mapper.UserMapper;
 import org.springframework.context.annotation.Bean;
